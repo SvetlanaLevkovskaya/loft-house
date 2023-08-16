@@ -93,6 +93,7 @@ body {
 
 a {
   color: #FFF;
+  transition: color 0.2s ease-in;
 }
 a:hover {
   color: #D4C17F;
