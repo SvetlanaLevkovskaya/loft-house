@@ -125,6 +125,17 @@ a:hover {
   white-space: nowrap;
 }
 
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  color: #D4C17F;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -218,6 +229,10 @@ a:hover {
   line-height: 1.35;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+.apartments__title {
+  margin-bottom: 88px;
 }
 
 /*# sourceMappingURL=main.css.map */
