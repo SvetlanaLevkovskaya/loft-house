@@ -102,11 +102,27 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1140px;
+  max-width: 1140px;
+}
+.container--sm {
+  max-width: 840px;
 }
 
 .text-right {
   text-align: right;
+}
+
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  /*keep the layout*/
+  position: absolute;
+  /*remove any visible trace (background color)*/
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  /*prevent the screen reader to skip spaces between words*/
+  white-space: nowrap;
 }
 
 .header {
@@ -178,6 +194,30 @@ a:hover {
 }
 .info--tel::before {
   background-image: url("./../../img/header/phone.svg");
+}
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__row {
+  display: flex;
+  column-gap: 70px;
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+
+.benefits__item-text {
+  font-size: 20px;
+  line-height: 1.35;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=main.css.map */
