@@ -1,10 +1,16 @@
 .form {
 
+  @include mediaTablet {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
 }
 
 .form__input {
   height: 50px;
   min-width: 255px;
+  width: 100%;
   padding: 12px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
@@ -28,10 +34,17 @@
   text-align: center;
   line-height: 1.23;
 
+  &--bottom {
+    @include mediaTablet {
+      grid-row: 4 / 5;
+    }
+  }
 }
 
 .form__btn {
   height: 50px;
+  min-width: 255px;
+  width: 100%;
   padding: 12px;
   font-size: 16px;
   color: $white;
@@ -43,5 +56,4 @@
   &:hover {
     background-color: saturate($accent, 10%)
   }
-
 }
