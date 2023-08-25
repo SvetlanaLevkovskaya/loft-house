@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Loft house</title>
     <link href="./scss/main.css" rel="stylesheet">
+    <link href="./libs/youtubeLightbox/youtubeLightbox.css" rel="stylesheet">
 </head>
 <body>
 
@@ -164,7 +165,7 @@
     <section class="video">
         <h2 class="visually-hidden">Видео про ЖК Loft House</h2>
         <div class="container">
-            <a class="video__link" href="www.youtube.com/watch?v=bhJNL9JUsnY">
+            <a data-youtubeLightbox class="video__link"  href="https://www.youtube.com/watch?v=bhJNL9JUsnY">
                 <img alt="video-icon" class="video__icon" src="img/video/play.svg">
                 <img alt="video" class="video__img" src="img/video/video-img.jpg">
             </a>
@@ -268,8 +269,21 @@
 </main>
 
 
+<!-- YouTube LightBox -->
+<div id="youtubelightbox" class="youtubelightbox">
+    <div class="youtubelightbox__centeredchild">
+        <div class="youtubelightbox__videowrapper">
+            <div id="youtubelightboxPlayer"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=4f537583-9ef9-4998-a98b-9a6ee160a9d3&lang=ru_RU" type="text/javascript"></script>
+
 <script src="./libs/phoneMask/mask.js"></script>
 <script src="./libs/phoneMask/mask_list.js"></script>
+
+<script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
 
 <script src="./js/main.js"></script>
 </body>
